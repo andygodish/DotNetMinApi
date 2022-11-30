@@ -1,6 +1,6 @@
 # .NET6 Minimal Commands API
 
-This readme will walk you through the steps of building a .NET minimal API. 
+This readme will walk you through the steps of building a .NET minimal API. The end result will be a Min API with a single model used to store CLI commands for various tools (dotnet, k8s, docker, etc).
 
 - [Reference Video](https://www.youtube.com/watch?v=5YB49OEmbbE&t=926s)
 
