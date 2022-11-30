@@ -28,4 +28,35 @@ Additionally, you can use netcat (nc) to determine a valid connection to a serve
 
 Subsequent steps will use this database following the migration of the schema defined by the application code. Leave it running for now. 
 
+## Aplication Scaffolding
+
+Use the dotnet cli to bootstrap a new project that utilizes the `webapi` template and sepcifies that it should be a minimal api with the `-minimal` flag. This will result in a base project that contains the following important files: 
+- appsettings.json 
+- program.cs
+- \<project\>.csproj
+
+Deploy locally by running `dotnet run` and note that by default your API is served on port 7126. 
+- I believe the port can be configured in your appsettings.json file
+    - when using `dotnet run`, is the appsettings.Development.json file being used for configuration?
+
+## Application Components
+
+### External Packages
+
+These can be imported via the dotnet cli and viewed in the `.csproj` file. These can be imported by your application packages with the `using` declaration at the top of a .cs file. For example, to add a package, run: `dotnet add package Microsoft.EntityFrameworkCore`, then view it in the `<ItemGroup>` block of your `.csproj` file. 
+
+```
+<ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+```
+
+
 
