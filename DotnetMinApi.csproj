@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
+    <Company>andyg.io</Company>
+    <Authors>Andy Godish</Authors>
+
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- dn user-secrets init -->
-    <UserSecretsId>b05073cd-70b9-4ce3-81fa-e2e0b39bb024</UserSecretsId> 
+    <UserSecretsId>b05073cd-70b9-4ce3-81fa-e2e0b39bb024</UserSecretsId>
+    <Description></Description>
   </PropertyGroup>
 
   <ItemGroup>

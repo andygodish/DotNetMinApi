@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotnetMinApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221129232929_initialmigration")]
+    [Migration("20221209033144_initialmigration")]
     partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

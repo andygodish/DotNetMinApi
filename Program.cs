@@ -15,6 +15,7 @@ var sqlConBuilder = new SqlConnectionStringBuilder();
 // Note how the builder obejct is able to pull from various configuration entities, the connString is coming from a json config file, whereas the UserId/Passwd is 
 // coming from a secret store.
 sqlConBuilder.ConnectionString = builder.Configuration.GetConnectionString("SQLDbConnection"); // getting this from appsettings.json file
+
 sqlConBuilder.UserID = builder.Configuration["UserId"];
 sqlConBuilder.Password = builder.Configuration["Password"];
 

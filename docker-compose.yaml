@@ -1,10 +1,24 @@
 version: '3'
 services: 
+  api:
+    image: "dotnetminapi:local"
+    networks:
+    - backend
+    environment: 
+      ConnectionStrings:SQLDbConnection: "Server=172.19.0.2,1433;Initial Catalog=CommandDb;User Id=sa;Password=pa55w0rd!"
+    ports:
+    - "80:80"
   sqlserver: 
     image: "mcr.microsoft.com/mssql/server:2019-latest"
+    networks:
+    - backend
     environment: 
       ACCEPT_EULA: "Y"
       SA_PASSWORD: "pa55w0rd!"
       MSSQL_PID: "Express"
     ports: 
     - "1433:1433"
+networks: 
+  backend: 
+    name: backend
+    driver: bridge

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Hgn1oZWACdhcgVZDNikr9sQ76qpjIDqSBUIGw53LWWY=",
+  "Source": "DotnetMinApi",
+  "BasePath": "_content/DotnetMinApi",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

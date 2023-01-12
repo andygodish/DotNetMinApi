@@ -11,7 +11,7 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b05073cd-70b9-4ce3-81fa-e2e0b39bb024")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("DotnetMinApi")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("andyg.io")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
